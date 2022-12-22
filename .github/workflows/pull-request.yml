@@ -13,7 +13,7 @@ jobs:
           envkey_POSTGRES_PASSWORD: "postgres"
           envkey_POSTGRES_DB: "drivenops_tests"
           envkey_POSTGRES_URL: "postgresql://postgres:postgres@driven_ops_db_tests:5432/drivenops_tests"
-          file_name: "./back-end/.env.test"
+          file_name: "back-end/.env.test"
       - name: Run api tests
         run: docker-compose -f docker-compose-tests.yml run driven_ops_app npm run test
 
