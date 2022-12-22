@@ -16,3 +16,4 @@ jobs:
           file_name: ".env.test"
       - name: Run api tests
         run: docker-compose -f docker-compose-tests.yml run driven_ops_app npm run test
+
